@@ -24,3 +24,5 @@ myTruple x y z = (x, y, z)
 myFst (x, y) = x
 -- Task 09
 mySnd (x, y) = y
+-- Task 10
+mySwap (x, y) = (y, x)
