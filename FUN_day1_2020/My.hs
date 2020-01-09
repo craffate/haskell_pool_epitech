@@ -6,3 +6,6 @@ myAbs x = case x < 0 of
 myMin x y = case x < y of
         True -> x
         False -> y
+myMax x y = case x < y of
+        True -> y
+        False -> x
