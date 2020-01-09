@@ -18,3 +18,5 @@ myMax x y = case x < y of
 -- Step 02
 -- Task 06
 myTuple x y = (x, y)
+-- Task 07
+myTruple x y z = (x, y, z)
