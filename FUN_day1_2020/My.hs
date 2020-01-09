@@ -39,3 +39,12 @@ myTail [] = error "Empty list"
 myLength :: [a] -> Int
 myLength (x:xs) = 1 + myLength xs
 myLength [] = 0
+-- Task 14
+myNth :: [a] -> Int -> a
+myNth (x:xs) i = case i < 0 of
+        True -> error "Negative index"
+        False -> case i >= myLength (x:xs) of
+                True -> error "Index out of range"
+                False -> case i == 0 of
+                        True -> x
+                        False -> myNth xs (i - 1)
