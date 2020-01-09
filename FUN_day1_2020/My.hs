@@ -35,3 +35,7 @@ myHead [] = error "Empty list"
 myTail :: [a] -> [a]
 myTail (x:xs) = xs
 myTail [] = error "Empty list"
+-- Task 13
+myLength :: [a] -> Int
+myLength (x:xs) = 1 + myLength xs
+myLength [] = 0
