@@ -22,3 +22,5 @@ myTuple x y = (x, y)
 myTruple x y z = (x, y, z)
 -- Task 08
 myFst (x, y) = x
+-- Task 09
+mySnd (x, y) = y
