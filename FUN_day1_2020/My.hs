@@ -26,3 +26,8 @@ myFst (x, y) = x
 mySnd (x, y) = y
 -- Task 10
 mySwap (x, y) = (y, x)
+-- Step 03
+-- Task 11
+myHead :: [a] -> a
+myHead (x:xs) = x
+myHead [] = error "Empty list"
