@@ -57,3 +57,10 @@ myTake i (x:xs) = case i >= myLength (x:xs) of
                 False -> case i == 0 of
                         True -> []
                         False -> x : myTake (i - 1) xs
+-- Task 16
+myDrop :: Int -> [a] -> [a]
+myDrop i (x:xs) = case i >= myLength (x:xs) of
+        True -> []
+        False -> case i == 0 of
+                True -> (x:xs)
+                False -> myDrop (i - 1) xs
