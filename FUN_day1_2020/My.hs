@@ -48,3 +48,12 @@ myNth (x:xs) i = case i < 0 of
                 False -> case i == 0 of
                         True -> x
                         False -> myNth xs (i - 1)
+-- Task 15
+myTake :: Int -> [a] -> [a]
+myTake i (x:xs) = case i >= myLength (x:xs) of
+        True -> (x:xs)
+        False -> case i < 0 of
+                True -> error "Negative index"
+                False -> case i == 0 of
+                        True -> []
+                        False -> x : myTake (i - 1) xs
