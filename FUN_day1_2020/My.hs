@@ -31,3 +31,7 @@ mySwap (x, y) = (y, x)
 myHead :: [a] -> a
 myHead (x:xs) = x
 myHead [] = error "Empty list"
+-- Task 12
+myTail :: [a] -> [a]
+myTail (x:xs) = xs
+myTail [] = error "Empty list"
