@@ -64,3 +64,7 @@ myDrop i (x:xs) = case i >= myLength (x:xs) of
         False -> case i == 0 of
                 True -> (x:xs)
                 False -> myDrop (i - 1) xs
+-- Task 17
+myAppend :: [a] -> [a] -> [a]
+myAppend (x:xs) y = x : myAppend xs y
+myAppend [] x = x
